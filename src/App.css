@@ -1,38 +1,91 @@
+/* color variables */
+:root {
+  --color-bg: #04aa6d;
+  --color-1: #b9eed9;
+  --color-2: #73d2ab;
+  --color-3: #3eb488;
+  --color-4: #0e4d92;
+  --color-5: #269ed3;
+  --color-6: #48cbe6;
+  --color-text: #161925;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question-card {
+  margin: 0 auto;
+  padding: 16px;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: bold;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+  width: 80%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li {
+  background-color: var(--color-2);
+  margin-top: 8px;
+  padding: 16px;
+  border: 2px solid var(--color-text);
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.question-text {
+  color: var(--color-1);
+  font-size: 24px;
+}
+
+.final-results {
+  margin: 0 auto;
+  padding: 16px;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: bold;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+  width: 50%;
+  height: auto;
+
+}
+
+/* button */
+
+button {
+  min-width: 100px;
+  min-height: 30px;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  color: #282828;
+  border: solid 1px #282828;
+  box-shadow: 0 0 5px 0 #34495e;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #04aa6d;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background-color: white;
+  color: #04aa6d;
 }
